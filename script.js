@@ -14,6 +14,7 @@ save.addEventListener('click', () => {
     newReminder.classList.add("big-text");
     newReminder.textContent = reminderText;
     reminder.appendChild(newReminder);
+    input.value = ""; 
 });
 
 right.addEventListener('click', () => {
@@ -40,7 +41,7 @@ left.addEventListener('click', () => {
                 let newReminder = document.createElement("p");
                 newReminder.classList.add("big-text");
                 newReminder.textContent = r.text;
-                reminder.appendChild(newReminder);
+                reminder.appendChild(newReminder); 
             }
         });
     }
