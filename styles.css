@@ -1,46 +1,41 @@
 html, body  {
-    background-image: linear-gradient(to  right,  #bb5a5a, #ee7070 );
+background-image: white;
 }
 
 
-.bodybox {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid rgb(4, 88, 11); /* Add border width and style */
-    border-style:dashed;
-    align-content: space-evenly;
-    margin-left: 40%;
-    background-color: rgb(102, 201, 168);
-    width: 400px;
-    height: 700px;  
-    border-radius: 40px;
+.box {
+display: flex;
+flex-direction: column;
+border: 5px solid rgb(46, 46, 46); 
+align-content: space-evenly;
+margin-left: 40%;
+background-color: rgb(237, 252, 170);
+width: 400px;
+height: 700px;  
+border-radius: 40px;
 }
 
-.headerbox {
-    order: 2;
+.header-box {
+order: 2;
 background-color:rgb(161, 75, 75);
-    width: 400px;
-    height: 100px;
-    display: flex;
-margin-top: 8%;
-
-
+width: 400px;
+height: 100px;
+display: flex;
+margin-top: 9%;
 }
 
 .header {
  text-align: center;
  margin-left: 5%;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- color: rgb(71, 11, 11);
+ color: rgb(0, 0, 0);
+ font-size: 50px;
 }
 
 .displayer {
-
-    order: 3;
-  border-radius: 2%;
-  border-color: black;
-  border-style: dotted;
-background-color: rgb(255, 184, 184);
+order: 3;
+border-radius: 2%;
+border-color: black;
+background-color: rgb(255, 255, 255);
 justify-content: center;
 display: flex;
 justify-content: center;
@@ -54,81 +49,83 @@ overflow: auto;
 }
 
 .buttons {
-    order: 4;
-    display: flex;
-    justify-content: center;
-    padding: 7%;
-    flex-direction: row;
+order: 4;
+display: flex;
+justify-content: center;
+padding: 7%;
+flex-direction: row;
 }
 
 .left {
-    padding:5%;
-
+padding:5%;
 }
 
 .score {
-    padding: 5%;
-}
-.right {
-    padding:5%;
- 
+padding: 5%;
 }
 
-.bleft{
+.right {
+padding:5%; 
+}
+
+.buttonleft{
  width: 50px;
  height: 30px;
  color: rgb(71, 2, 2);
  background-color: rgb(255, 126, 126);
 }
-.bleft:hover {
-    background-color: rgb(71, 2, 2);
-    color: rgb(255, 126, 126);
+
+.buttonleft:hover {
+background-color: rgb(71, 2, 2);
+color: rgb(255, 126, 126);
 }
 
-.bright:hover {
-    background-color: rgb(71, 2, 2);
-    color: rgb(255, 126, 126);
+.buttonright:hover {
+background-color: rgb(71, 2, 2);
+color: rgb(255, 126, 126);
 }
 
-.bright {
-    width: 50px;
-    height: 30px;
-    color: rgb(71, 2, 2);
-    background-color: rgb(255, 126, 126);
+.buttonright {
+width: 50px;
+height: 30px;
+color: rgb(71, 2, 2);
+background-color: rgb(255, 126, 126);
 }
 
-.large-text {
-    justify-content: center;
-    font-size: 24px; 
-    font-family: cursive;
+.big-text {
+justify-content: center;
+font-size: 24px; 
+font-family: cursive;
 color: rgb(0, 0, 0);
 }
+
 .input-container {
-    display: flex;
-    order: 5;
+display: flex;
+order: 5;
 justify-content: center;
 padding: 5%;
 }
 
 input {
-    border: 5px solid rgb(146, 63, 63); /* Adjust the width and color as needed */
-
-    padding: 5px; /* Optional: Add some padding for better appearance */
-    width: 150px;
-    height: 40px;
+border: 5px solid rgb(146, 63, 63); 
+padding: 5px; 
+width: 150px;
+height: 40px;
 }
+
 .add {
-    margin-left: 5%;
-    margin-bottom: 2%;
+margin-left: 5%;
+margin-bottom: 2%;
 }
-.addb {
-    width: 50px;
-    height: 30px;
-    color: rgb(71, 2, 2);
-    background-color: rgb(255, 126, 126);
+.addbutton {
+width: 50px;
+height: 30px;
+color: rgb(71, 2, 2);
+background-color: rgb(255, 126, 126);
 }
 
-.addb:hover {
-    background-color: rgb(71, 2, 2);
-    color: rgb(255, 126, 126);
+.addbutton:hover {
+background-color: rgb(71, 2, 2);
+color: rgb(255, 126, 126);
 }
+

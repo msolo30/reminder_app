@@ -3,18 +3,19 @@ let reminders = [];
 const input = document.querySelector("#name");
 let scoreContainer = document.querySelector(".score");
 let reminder = document.querySelector(".displayer");
-const save = document.querySelector(".addb")
-const left = document.querySelector(".bleft")
-const right = document.querySelector(".bright")
+const save = document.querySelector(".addbutton")
+const left = document.querySelector(".buttonleft")
+const right = document.querySelector(".buttonright")
 
 save.addEventListener('click', () => {
     let reminderText = input.value;
     reminders.push({ score: score, text: reminderText });
     let newReminder = document.createElement("p");
-    newReminder.classList.add("large-text");
+    newReminder.classList.add("big-text");
     newReminder.textContent = reminderText;
     reminder.appendChild(newReminder);
 });
+
 right.addEventListener('click', () => {
     score++;
     scoreContainer.textContent = score;
@@ -22,7 +23,7 @@ right.addEventListener('click', () => {
     reminders.forEach(r => {
         if (r.score === score) {
             let newReminder = document.createElement("p");
-            newReminder.classList.add("large-text");
+            newReminder.classList.add("big-text");
             newReminder.textContent = r.text;
             reminder.appendChild(newReminder);
         }
@@ -37,7 +38,7 @@ left.addEventListener('click', () => {
         reminders.forEach(r => {
             if (r.score === score) {
                 let newReminder = document.createElement("p");
-                newReminder.classList.add("large-text");
+                newReminder.classList.add("big-text");
                 newReminder.textContent = r.text;
                 reminder.appendChild(newReminder);
             }
